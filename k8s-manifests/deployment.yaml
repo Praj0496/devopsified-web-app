@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver-deployment
+  labels:
+    app: go-site
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-site
+  template:
+    metadata:
+      labels:
+        app: go-site
+    spec:
+      containers:
+      - name: go-site
+        image: praj0404/go-webapp:1.0
+        ports:
+        - containerPort: 8080
