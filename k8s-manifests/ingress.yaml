@@ -3,14 +3,9 @@ kind: Ingress
 metadata:
   name: webserver-ingress
 spec:
-  rules:
-  - host: "go-site.local"
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: webserver-service
-            port:
-              number: 80
+  ingressClassName: nginx
+  defaultBackend:
+    service:
+      name: webserver-service
+      port:
+        number: 80
