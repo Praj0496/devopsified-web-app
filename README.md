@@ -6,6 +6,9 @@
 **Author:** Prajwal  
 **Date:** 27-08-2024 
 
+## Project Architecture
+![Project Diagram drawio (1)](https://github.com/user-attachments/assets/4c1784f9-f1d5-4cfb-8b7e-46effdb44d1d)
+
 ## 1. Introduction
 
 This project report outlines the creation and implementation of a comprehensive CI/CD pipeline for a Go-based web application, deployed on a Google Kubernetes Engine (GKE) cluster. The project integrates various DevOps tools and practices, including Docker, Kubernetes, Helm, and Argo CD, to achieve an automated and streamlined deployment process.
